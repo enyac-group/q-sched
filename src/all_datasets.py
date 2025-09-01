@@ -32,6 +32,18 @@ logging.getLogger("huggingface_hub.repocard").setLevel(logging.ERROR)
 IMAGE_URL = "https://huggingface.co/datasets/mit-han-lab/svdquant-datasets/resolve/main/sDCI.gz"
 PROMPT_URLS = {"sDCI": "https://huggingface.co/datasets/mit-han-lab/svdquant-datasets/resolve/main/sDCI.yaml"}
 
+class MJHQConfig(datasets.BuilderConfig):
+    def __init__(self, max_dataset_size: int = -1, return_gt: bool = False, **kwargs):
+        super(MJHQConfig, self).__init__(
+            name=kwargs.get("name", "default"),
+            version=kwargs.get("version", "0.0.0"),
+            data_dir=kwargs.get("data_dir", None),
+            data_files=kwargs.get("data_files", None),
+            description=kwargs.get("description", None),
+        )
+        self.max_dataset_size = max_dataset_size
+        self.return_gt = return_gt
+        
 class DCIConfig(datasets.BuilderConfig):
     def __init__(self, max_dataset_size: int = -1, return_gt: bool = False, **kwargs):
         super(DCIConfig, self).__init__(
