@@ -28,8 +28,8 @@ Our current environment is compatible with Nvidia RTX A6000s with CUDA 12.2, dri
 conda env create -f env.yml
 ```
 
-Download the [sDCI](https://huggingface.co/datasets/mit-han-lab/svdquant-datasets/blob/35636da44cdc7cef8916b122a12e4aa9e2df80c1/sDCI.yaml) .yaml file to use as a calibration dataset.
+Download the [sDCI](https://huggingface.co/datasets/mit-han-lab/svdquant-datasets/blob/35636da44cdc7cef8916b122a12e4aa9e2df80c1/sDCI.yaml) .yaml file to use as a calibration dataset. Name it as `q-sched/dci_prompts.yaml`.
 
 ### Q-Sched Search & Evaluation
 
-See `qsched.sh`.
+See scripts folder. First, find new coefficients using `source scripts/qsched.sh` and generate images with the new schedule using `source scripts/collect_images.sh`.
