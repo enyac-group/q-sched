@@ -2,6 +2,8 @@
 
 [[paper](http://arxiv.org/abs/)]
 
+![teaser](assets/teaser.png)
+
 ## TL; DR
 
 A training-free scheduler adaptation for quantized diffusion models. Use an off-the-shelf pre-trained model and adapt it's scheduler for faster inference.
