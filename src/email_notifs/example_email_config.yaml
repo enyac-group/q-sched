@@ -1,0 +1,6 @@
+email:
+  smtp_server: "smtp.gmail.com"  # Change for other providers
+  smtp_port: 465
+  sender_email: "weloveenyac@gmail.com" # your email, which you want to send from
+  sender_password: "blah blah blah"  # Use an App Password, not your real password
+  receiver_email: "nfrumkin@utexas.edu" # your email, which you want to send to
