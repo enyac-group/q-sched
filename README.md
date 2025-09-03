@@ -1,6 +1,6 @@
 # Pushing the Boundaries of Few-Step Diffusion Models with Quantization-Aware Scheduling
 
-[[paper](http://arxiv.org/abs/)]
+[[paper](https://arxiv.org/abs/2509.01624)]
 
 ![teaser](assets/teaser.png)
 
